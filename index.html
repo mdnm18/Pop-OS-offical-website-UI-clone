@@ -12,50 +12,52 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Roboto+Slab:wght@700&display=swap"
         rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
 
     <header class="header">
-        <div class="header-top">
-            <nav class="nav-user">
-                <a href="#">search</a>
-                <a href="#">contact</a>
-                <a href="#">log in</a>
-                <a href="#">register</a>
-                <a href="#">cart</a>
-            </nav>
-        </div>
+        <div class="header-container">
+            <div class="header-logo-container">
+                <a href="#" class="header-logo">
+                    <img src="assets/images/system76-logo-open-source-tagliner4_1730474034__00841.original.png.webp"
+                        alt="System76 Logo">
+                </a>
+            </div>
 
-        <div class="header-logo-container">
-            <a href="#" class="header-logo">
-                <img src="assets/images/system76-logo-open-source-tagliner4_1730474034__00841.original.png.webp"
-                    alt="System76 Logo">
-            </a>
-        </div>
+            <div class="nav-wrapper" id="mobile-menu">
+                <div class="header-top">
+                    <nav class="nav-user">
+                        <a href="#">search</a>
+                        <a href="#">contact</a>
+                        <a href="#">log in</a>
+                        <a href="#">register</a>
+                        <a href="#">cart</a>
+                    </nav>
+                </div>
+                <div class="header-main-nav">
+                    <nav class="nav-main">
+                        <ul class="nav-list">
+                            <li><a href="#">laptops</a></li>
+                            <li><a href="#">desktops</a></li>
+                            <li><a href="#">workstations</a></li>
+                            <li><a href="#">mini</a></li>
+                            <li><a href="#">servers</a></li>
+                            <li><a href="#">keyboards</a></li>
+                            <li><a href="#">components</a></li>
+                            <li><a href="#" class="active">pop!_os</a></li>
+                            <li><a href="#">merch</a></li>
+                            <li><a href="#">specials</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
 
-        <div class="header-main-nav">
-            <nav class="nav-main">
-                <ul class="nav-list">
-                    <li><a href="#">laptops</a></li>
-                    <li><a href="#">desktops</a></li>
-                    <li><a href="#">workstations</a></li>
-                    <li><a href="#">mini</a></li>
-                    <li><a href="#">servers</a></li>
-                    <li><a href="#">keyboards</a></li>
-                    <li><a href="#">components</a></li>
-                    <li><a href="#">pop!_os</a></li>
-                    <li><a href="#">merch</a></li>
-                    <li><a href="#">specials</a></li>
-                </ul>
-            </nav>
+            <button class="nav-toggle" id="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
         </div>
-
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
     </header>
 
     <main>
@@ -65,19 +67,19 @@
                 <p>Unleash your potential on Pop!_OS: an operating system for STEM and creative professionals.</p>
                 <div class="hero-buttons">
                     <a href="#" class="btn btn-secondary">Download</a>
-                    <a href="#" class="btn btn-primary" style="color:black">Donate to Pop</a>
+                    <a href="#" class="btn btn-primary">Donate to Pop</a>
                 </div>
             </div>
         </section>
 
-        <section class="evolving">
+        <section class="evolving fade-in-section">
             <h2>Pop!_OS Is Evolving</h2>
-            <p>COSMIC, our budding desktop environment, brings new features, refinements, core <br> apps, stability,
+            <p>COSMIC, our budding desktop environment, brings new features, refinements, core apps, stability,
                 security, and performance to Pop!_OS users everywhere.</p>
             <a href="#" class="learn-more">Learn more about COSMIC <i class="fas fa-angle-right"></i></a>
         </section>
 
-        <section class="video-section">
+        <section class="video-section fade-in-section">
             <h2>Meet Pop!_OS</h2>
             <a href="#" class="video-thumbnail">
                 <img src="assets/images/maxresdefault.jpg" alt="Pop!_OS Workflow & Customization Video Thumbnail">
@@ -85,24 +87,27 @@
             </a>
         </section>
 
-        <section class="features-title">
+        <section class="features-title fade-in-section">
             <p>FEATURES</p>
             <h2>WHY POP!_OS?</h2>
         </section>
 
-        <section class="feature-section">
+        <section class="feature-section fade-in-section">
+            <div class="feature-image">
+                <img src="assets/images/workflowrr.png.webp" alt="Pop!_OS Workflow">
+            </div>
             <div class="feature-text">
                 <h3>Workflow</h3>
                 <p>Pop!_OS is designed for fast navigation, easy workspace organization, and fluid, convenient workflow.
                     Your operating system should encourage discovery, not obstruct it.</p>
                 <a href="#" class="learn-more">Learn More <i class="fas fa-angle-right"></i></a>
             </div>
-            <div class="feature-image">
-                <img src="assets/images/workflowrr.png.webp" alt="Pop!_OS Workflow">
-            </div>
         </section>
 
-        <section class="feature-section">
+        <section class="feature-section fade-in-section">
+            <div class="feature-image">
+                <img src="assets/images/compatibilityr.png.webp" alt="App Compatibility Icons">
+            </div>
             <div class="feature-text">
                 <h3>Compatibility</h3>
                 <p>Develop software out of the box with a vast array of libraries and tools at your disposal. Pop!_OS
@@ -110,13 +115,12 @@
                     software on the OS.</p>
                 <a href="#" class="learn-more">Learn More <i class="fas fa-angle-right"></i></a>
             </div>
-            <div class="feature-image">
-                <img src="assets/images/compatibilityr.png.webp" alt="App Compatibility Icons">
-            </div>
         </section>
 
-        <section class="feature-section">
-
+        <section class="feature-section fade-in-section">
+            <div class="feature-image">
+                <img src="assets/images/security.png.webp" alt="Pop!_OS Drive Encryption">
+            </div>
             <div class="feature-text">
                 <h3>Keep Your Computer Secure</h3>
                 <p>Built with security at its core. Full-disk encryption comes standard, keeping your data safe from
@@ -125,13 +129,12 @@
                     management ensures your hardware stays up to date with the latest security patches.</p>
                 <a href="#" class="learn-more">Learn More <i class="fas fa-angle-right"></i></a>
             </div>
-            <div class="feature-image">
-                <img src="assets/images/security.png.webp" alt="Pop!_OS Drive Encryption">
-            </div>
         </section>
 
-        <section class="feature-section">
-
+        <section class="feature-section fade-in-section">
+            <div class="feature-image">
+                <img src="assets/images/hyper-customization.png.webp" alt="Pop!_OS Customization Options">
+            </div>
             <div class="feature-text">
                 <h3>Customization</h3>
                 <p>Get comfy with an extensive, easy-to-find list of preferences. Set dock orientation, window tiling,
@@ -139,12 +142,9 @@
                     tool, your way. YOURS.</p>
                 <a href="#" class="learn-more">Learn More <i class="fas fa-angle-right"></i></a>
             </div>
-            <div class="feature-image">
-                <img src="assets/images/hyper-customization.png.webp" alt="Pop!_OS Customization Options">
-            </div>
         </section>
 
-        <section class="other-features">
+        <section class="other-features fade-in-section">
             <h2>Other Features</h2>
             <div class="features-grid">
                 <div class="feature-card">
@@ -170,7 +170,7 @@
             </div>
         </section>
 
-        <section class="hardware-section">
+        <section class="hardware-section fade-in-section">
             <p>THE COMPLETE EXPERIENCE</p>
             <h2>Hardware Made For Pop!_OS</h2>
             <div class="hardware-grid">
@@ -178,32 +178,32 @@
                     <img src="assets/images/detail-laptop.jpg" alt="Laptop">
                     <h3>Laptops</h3>
                     <p>High-performance laptops designed to harmonize with their software while tightening security.</p>
-                    <a href="#" class="btn btn-primary" style="color:black">Shop Now</a>
+                    <a href="#" class="btn btn-primary">Shop Now</a>
                 </div>
                 <div class="hardware-card">
                     <img src="assets/images/detail-desktop.jpg" alt="Desktop">
                     <h3>Desktops</h3>
                     <p>Powerful, quiet handcrafted desktops designed for tinkering and engineered for max performance.
                     </p>
-                    <a href="#" class="btn btn-primary" style="color:black">Shop Now</a>
+                    <a href="#" class="btn btn-primary">Shop Now</a>
                 </div>
                 <div class="hardware-card">
                     <img src="assets/images/detail-workstation.jpg" alt="Workstation">
                     <h3>Workstations</h3>
                     <p>Computers designed for intense tasks, offering robust performance and open-source adaptability.
                     </p>
-                    <a href="#" class="btn btn-primary" style="color:black">Shop Now</a>
+                    <a href="#" class="btn btn-primary">Shop Now</a>
                 </div>
                 <div class="hardware-card">
                     <img src="assets/images/detail-keyboard.jpg" alt="Keyboard">
                     <h3>Keyboards</h3>
                     <p>Handcrafted mechanical keyboards designed by keyboard enthusiasts for typing at warp speed.</p>
-                    <a href="#" class="btn btn-primary" style="color:black">Shop Now</a>
+                    <a href="#" class="btn btn-primary">Shop Now</a>
                 </div>
             </div>
         </section>
 
-        <section class="testimonials">
+        <section class="testimonials fade-in-section">
             <h2 class="testimonials-title">Testimonials</h2>
             <div class="slider-container">
                 <div class="slides-wrapper">
@@ -246,13 +246,13 @@
                 <div class="slider-dots"></div>
             </div>
         </section>
-        <section class="about-section">
+
+        <section class="about-section fade-in-section">
             <div class="section-heading">
                 <p class="subtitle">PROUD ADVOCATES FOR OPEN SOURCE</p>
                 <h2>ABOUT SYSTEM76</h2>
             </div>
             <div class="feature-container">
-
                 <div class="feature-image">
                     <img src="assets/images/manufacturing-sectioncontent-thelio-building.png.webp"
                         alt="System76 engineers building a computer">
@@ -267,12 +267,12 @@
                 </div>
             </div>
         </section>
-        <section class="final-cta">
+
+        <section class="final-cta fade-in-section">
             <h2>Unleash Your Potential</h2>
             <p>Pop!_OS is free to download, and freeing to use. Get started with this powerful OS and take to the stars.
             </p>
             <a href="#" class="btn btn-primary">Download</a>
-
             <div class="community-links">
                 <a href="#" class="community-link">
                     <img src="assets/images/poplinks-docsrr.jpg" alt="Pop Docs icon">
@@ -308,10 +308,8 @@
                 </div>
             </div>
             <div class="footer-subscribe">
-                <div class="subscribe">
-                    <p>Subscribe for updates on products, OS features, and promotions.</p>
-                    <a href="#" class="btn btn-secondary" style="color: black">Subscribe</a>
-                </div>
+                <p>Subscribe for updates on products, OS features, and promotions.</p>
+                <a href="#" class="btn btn-secondary">Subscribe</a>
                 <div class="social-icons">
                     <a href="#" aria-label="RSS"><i class="fas fa-rss-square"></i></a>
                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>

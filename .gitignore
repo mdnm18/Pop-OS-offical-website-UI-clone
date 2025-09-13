@@ -1,0 +1,11 @@
+# Mac-specific files
+.DS_Store
+
+# Python-specific files
+__pycache__/
+*.pyc
+
+# IDE/Editor-specific files
+.vscode/
+.idea/
+.env

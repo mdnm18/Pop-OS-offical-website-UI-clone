@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  web:
+    # This tells Compose to build the image from the Dockerfile in the current directory.
+    build: .
+    # This maps port 8080 on your computer to port 80 inside the container.
+    ports:
+      - "8080:80"
