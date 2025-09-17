@@ -12,7 +12,11 @@ jobs:
     steps:
       # Step 1: Check out the repository code
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
+      # --- THIS IS THE NEW STEP THAT FIXES THE ERROR ---
+      - name: Install Docker Compose
+        run: sudo apt-get update && sudo apt-get install -y docker-compose
 
       # Step 2: Build and run the Docker container in the background
       - name: Build and run Docker container
@@ -20,7 +24,7 @@ jobs:
 
       # Step 3: Set up Python for our test script
       - name: Set up Python
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v5
         with:
           python-version: "3.x"
 
@@ -49,17 +53,17 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           # This tells Pages where your website files are
           path: "."
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
