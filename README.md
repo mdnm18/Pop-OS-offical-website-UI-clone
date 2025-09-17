@@ -6,7 +6,7 @@
 
 A fully responsive, pixel-perfect UI clone of the System76 Pop!_OS website, built from scratch with pure HTML, CSS, and vanilla JavaScript. This project focuses on modern frontend techniques without relying on any external frameworks.
 
-**[▶️ View Live Demo](https://your-deployed-link.com)** ![Project Screenshot](./assets/images/project-screenshot.png) 
+**[▶️ View Live Demo](https://mdnm18.github.io/Pop-OS-offical-website-UI-clone/)**
 ---
 
 ## 📋 Table of Contents
